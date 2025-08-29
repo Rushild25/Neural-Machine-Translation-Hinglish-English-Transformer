@@ -7,7 +7,7 @@
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Status](https://img.shields.io/badge/status-active-brightgreen.svg)
 
-*A Transformer-based Neural Machine Translation (NMT) model for translating Hinglish (Hindi-English mixed text) into English.*
+*A Transformer-based Neural Machine Translation (NMT) model for translating Hinglish (Hindi-English mixed text) into English with transformer architecture implemented from the Attention is all your need research paper.*
 
 </div>
 
@@ -15,11 +15,10 @@
 
 ## ✨ Features
 
-- 🤖 **Transformer Architecture** - State-of-the-art sequence-to-sequence translation
-- 🔧 **Text Preprocessing** - Advanced tokenization and preprocessing for Hinglish text
+- 🤖 **Transformer Architecture** - Implemented from the renowned "Attention is All You Need" research paper
+- 🔧 **Text Preprocessing** - Advanced tokenization and preprocessing for Hinglish and English text
 - 📦 **Pre-trained Model** - Ready-to-use trained model (tracked with Git LFS)
 - 📓 **Interactive Notebook** - Complete Jupyter notebook for training and inference
-- 🚀 **Easy Integration** - Simple API for seamless integration
 
 ---
 
@@ -73,11 +72,8 @@ pip install -r requirements.txt
 
 ### 3. Required Dependencies
 - `torch` - PyTorch framework
-- `transformers` - Hugging Face transformers
-- `torchtext` - Text processing utilities
 - `numpy` - Numerical computations
 - `pandas` - Data manipulation
-- `nltk` - Natural language processing
 - `tqdm` - Progress bars
 
 ---
@@ -89,12 +85,17 @@ pip install -r requirements.txt
 jupyter notebook Hinglish_to_English_Transformer.ipynb
 ```
 
-### Option 2: Using Python Script
+### Option 2: Using Web Application
+```bash
+streamlit run app.py
+```
+
+### Option 3: Using Python Script
 ```bash
 python translate_hinglish.py
 ```
 
-### Option 3: Programmatic Usage
+### Option 4: Programmatic Usage
 ```python
 from translate import Translator
 
@@ -117,8 +118,8 @@ Neural-Machine-Translation-Hinglish-English-Transformer/
 ├── 📂 data/                                    # Dataset files (optional)
 ├── 🧠 transformer_model.pth                   # Pre-trained model (Git LFS)
 ├── 📓 Hinglish_to_English_Transformer.ipynb   # Main training notebook
-├── 🐍 translate_hinglish.py                   # Translation script (optional)
-├── 📋 requirements.txt                        # Python dependencies
+├── 🚀 app.py                                  # Streamlit/Flask web application
+├── ⚙️ model_components.py                     # Transformer model architecture
 └── 📖 README.md                               # Project documentation
 ```
 
